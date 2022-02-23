@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace DoorControlExercise
 {
-    public class UserValidation
+    public class UserValidation: IUserValidation
     {
+        public bool ValidateEntryRequest(int id)
+        {
+            //Do real validation
+            return true;
+        }
     }
 }

@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace DoorControlExercise
 {
-    public class EntryNotification
+    public class EntryNotification: IEntryNotification
     {
+        public void NotifyEntryDenied(int id)
+        {
+            //Notify denied real
+        }
+
+        public void NotifyEntryGranted(int id)
+        {
+            //Notofy granted real
+        }
     }
 }

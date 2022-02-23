@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace DoorControlExercise
 {
-    public class Door
+    public class Door: IDoor
     {
+        public void Open()
+        {
+            //Open real door
+        }
+
+        public void Close()
+        {
+            //close real door
+        }
     }
 }

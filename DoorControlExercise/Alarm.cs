@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DoorControlExercise
 {
-    public class Alarm
+    public class Alarm : IAlarm
     {
+        public void RaiseAlarm()
+        {
+            //Sound the real alarm
+        }
     }
 }
