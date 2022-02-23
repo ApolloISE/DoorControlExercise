@@ -13,22 +13,31 @@ namespace DoorControlExercise
         private IEntryNotification? _entryNotification;
         private IUserValidation? _userValidation;
 
+
         public DoorControl(IAlarm alarm, IDoor door, IEntryNotification entryNotification, IUserValidation userValidation)
         {
             _alarm = alarm;
             _door = door;
             _entryNotification = entryNotification;
             _userValidation = userValidation;
+            DoorState = State.Closed;
         }
 
-
-
+        public State DoorState
+        {
+            get;
+            set;
+        }
+        
 
     }
 
     public enum State
     {
-
-    }
+        Opening,
+        Closing,
+        Closed,
+        Breached
+    };
 
 }

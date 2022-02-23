@@ -8,7 +8,7 @@ namespace TestDoorControl
         public void Setup()
         {
         }
-
+        
         [Test]
         public void Test1()
         {
