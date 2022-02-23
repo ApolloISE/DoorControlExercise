@@ -10,7 +10,7 @@ namespace DoorControlExercise
     {
         private IAlarm? _alarm;
         private IDoor? _door;
-        private IEntryNotification ? _entryNotification;
+        private IEntryNotification? _entryNotification;
         private IUserValidation? _userValidation;
 
         public DoorControl(IAlarm alarm, IDoor door, IEntryNotification entryNotification, IUserValidation userValidation)
