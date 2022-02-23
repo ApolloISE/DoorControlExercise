@@ -21,5 +21,14 @@ namespace DoorControlExercise
             _userValidation = userValidation;
         }
 
+
+
+
     }
+
+    public enum State
+    {
+
+    }
+
 }
