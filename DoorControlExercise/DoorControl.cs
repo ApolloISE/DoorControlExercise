@@ -28,7 +28,7 @@ namespace DoorControlExercise
             get;
             set;
         }
-        
+
 
     }
 
