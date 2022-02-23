@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace DoorControlExercise
 {
@@ -27,6 +28,42 @@ namespace DoorControlExercise
         {
             get;
             set;
+        }
+
+        public void RequestEntry(int id)
+        {
+            
+            Console.WriteLine($"Entry requested for {id}");
+            if (_userValidation.ValidateEntryRequest(id))
+            {
+                _door.Open();
+                _entryNotification.NotifyEntryGranted(id);
+                DoorState = State.Opening;
+                Task.Delay(1000).ContinueWith(t=>DoorOpened());
+               
+            }
+            else
+            {
+                _entryNotification.NotifyEntryDenied(id);
+            }
+            
+        }
+
+        public void DoorOpened()
+        {
+            if (DoorState != State.Opening)
+            {
+                DoorState = State.Breached;
+                throw new AccessViolationException();
+            }
+            _door.Close();
+            DoorState = State.Closing;
+            Task.Delay(1000).ContinueWith(t => DoorClosed());
+        }
+
+        public void DoorClosed()
+        {
+            DoorState = State.Closed;
         }
 
 
