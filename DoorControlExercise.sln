@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoorControlExercise", "Door
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDoorControl", "TestDoorControl\TestDoorControl.csproj", "{5C74D7A2-F3E6-4FAC-97ED-9D020E4BE776}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeDoorControl", "FakeDoorControl\FakeDoorControl.csproj", "{150F22B4-0A03-45AE-A042-6F69F0F16374}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5C74D7A2-F3E6-4FAC-97ED-9D020E4BE776}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C74D7A2-F3E6-4FAC-97ED-9D020E4BE776}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C74D7A2-F3E6-4FAC-97ED-9D020E4BE776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{150F22B4-0A03-45AE-A042-6F69F0F16374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{150F22B4-0A03-45AE-A042-6F69F0F16374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{150F22B4-0A03-45AE-A042-6F69F0F16374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{150F22B4-0A03-45AE-A042-6F69F0F16374}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

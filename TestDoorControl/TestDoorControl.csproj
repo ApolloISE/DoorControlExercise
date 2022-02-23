@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DoorControlExercise\DoorControlExercise.csproj" />
+    <ProjectReference Include="..\FakeDoorControl\FakeDoorControl.csproj" />
   </ItemGroup>
 
 </Project>
