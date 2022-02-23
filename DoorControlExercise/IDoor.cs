@@ -8,6 +8,7 @@ namespace DoorControlExercise
 {
     public interface IDoor
     {
-
+        public void Open();
+        public void Close();
     }
 }

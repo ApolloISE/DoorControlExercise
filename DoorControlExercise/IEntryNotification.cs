@@ -8,6 +8,8 @@ namespace DoorControlExercise
 {
     public interface IEntryNotification
     {
+        public void NotifyEntryDenied(int id);
+        public void NotifyEntryGranted(int id);
 
     }
 }
