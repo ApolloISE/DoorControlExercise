@@ -13,7 +13,7 @@ namespace TestDoorControl
         FakeEntryNotification? _entryNotification;
         FakeUserValidation? _userValidation;
 
-        private DoorControl uut;
+        private DoorControl? uut;
         [SetUp]
         public void Setup()
         {
