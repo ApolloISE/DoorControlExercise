@@ -39,7 +39,7 @@ namespace DoorControlExercise
                 _door.Open();
                 _entryNotification.NotifyEntryGranted(id);
                 DoorState = State.Opening;
-                Task.Delay(1000).ContinueWith(t=>DoorOpened());
+               
                //Enten brug events eller kald direkte fra unit tests.
             }
             else
@@ -58,7 +58,6 @@ namespace DoorControlExercise
             }
             _door.Close();
             DoorState = State.Closing;
-            Task.Delay(1000).ContinueWith(t => DoorClosed());
         }
 
         public void DoorClosed()
