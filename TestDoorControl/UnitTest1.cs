@@ -18,14 +18,21 @@ namespace TestDoorControl
             _alarm = new FakeAlarm();
             _door = new FakeDoor();
             _entryNotification = new FakeEntryNotification();
-            _userValidation = new UserValidation();
+            _userValidation = new FakeUserValidation();
             uut = new DoorControl(_alarm, _door, _entryNotification, _userValidation);
+
         }
         
         [Test]
         public void Test1()
         {
             Assert.Pass();
+        }
+
+        public void RequestEntry_Is_Granted_Denied(bool entry, int id)
+        {
+            _userValidation.va
+
         }
 
     }
